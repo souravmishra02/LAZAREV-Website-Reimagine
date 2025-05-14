@@ -18,8 +18,9 @@ nav{
     align-items: flex-start;
     padding: 2vw 11vw;
     justify-content: space-between;
-    /* background-color: greenyellow; */
+    background-color: #111;
     height: 12vh;
+    z-index: 19;
 }
 #nav2{
     display: flex;
@@ -27,6 +28,7 @@ nav{
     padding: 1vh;
     position: relative;
     z-index: 19;
+
 }
 #nav2 h4{
     text-transform: uppercase;
@@ -45,7 +47,6 @@ nav{
     margin-left: 18px;
     font-weight: 300;
     display: inline-block;
-    /* transform: translateY(25px); */
 }
 #navbottom{
     width: 79%;
@@ -184,20 +185,223 @@ button img{
     z-index: 2;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 #page2{
     height: 100vh;
     width: 100%;
     background-color: #111;
+    position: relative;
+    padding: 0 10.5vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+
 }
+#page2-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+#page-2-left p{
+    font-size: 1vw;
+}
+#page2-left h5{
+    margin-bottom: 20px;
+    width: 65%;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+#page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color:#333 */
+}
+.right-element{
+    position: relative;
+    border-bottom: 1px solid #333;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+}
+.right-element h2{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.right-element img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-3center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.page-3center .icon i {
+    color: #111;
+    font-size: 3vw;
+}
+.page-3center .icon {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    border-radius: 50%;
+
+}
+.page-3center h5{
+    font-size: 0.8vw;
+    font-weight:700;
+    padding: 10px 26px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #111;
+    border-radius: 50px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all ease 0.5s;
+}
+.page-3center:hover h5{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+#page3 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    opacity: 0;
+    border-radius: 30px;
+    z-index: 8888;
+}
+#page4{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#div-left{
+    height: 100%;
+    width: 45%;
+    padding: 3vw 10vw;
+    font-size: 1.7vw;
+    font-weight:500;
+
+}
+#div-left h1{
+    color: #111;
+    margin-top: 50px;
+}
+#div-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#top-div{
+    height: 40%;
+    width: 100%;
+    padding: 3vw 6vw;
+}
+#top-div h4{
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 0.586);
+    font-weight:700;
+    margin-top: 45px;
+    text-transform: uppercase;
+    
+}
+#top-div p{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1.5vw;
+}
+#div-bottom{
+    height: 60%;
+    width: 100%;
+    padding: 2vw 6vw;
+    font-size: 1.5vw;
+
+}
+#div-bottom h4{
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 0.586);
+    font-weight:700;
+    margin-top: 45px;
+    text-transform: uppercase;
+    
+}
+#div-bottom p{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1.5vw;
+}
+
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17vh 10vw;
+}
+.sec-left{
+    height: 100%;
+    width: 25%;
+    background-color: aqua;
+    border-top: 2px solid #000;
+
+}
+
+.sec-left h2{
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: #000;
+}
+.sec-left p{
+    
+}
+.sec-right{
+    height: 100%;
+    width: 70%;
+    background-color: #0ba34e;
+
+
+}
+
+

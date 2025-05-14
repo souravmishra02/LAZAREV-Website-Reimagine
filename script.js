@@ -38,3 +38,56 @@ nav.addEventListener("mouseleave",function(){
 
 }
 navAnimation()
+function page2animation(){
+    var rightElems = document.querySelectorAll(".right-element")
+rightElems.forEach(function(element){
+    element.addEventListener("mouseenter", function(){
+        gsap.to(element.childNodes[3],{
+            opacity:1,
+            scale:1
+        })
+    })
+
+    element.addEventListener("mouseleave", function(){
+        gsap.to(element.childNodes[3],{
+            opacity:0,
+            scale:0
+    })
+    element.addEventListener("mousemove", function(dets){
+        gsap.to(element.childNodes[3],{
+            x:dets.x - element.getBoundingClientRect().x-50,   
+            y:dets.y - element.getBoundingClientRect().y-190 
+        })
+        })
+    })
+})
+
+}
+page2animation()
+
+function page3VideoAnimation(){
+    var page3Center= document.querySelector(".page-3center")
+var video = document.querySelector("#page3 video ")
+page3Center.addEventListener("click", function(){
+    video.play()
+    gsap.to(video,{ 
+    transform:"scaleX(1) scaleY(2)",
+    opacity:1,
+    borderRadius:0
+
+    })
+
+})
+video.addEventListener("click",function(){
+    video.pause()
+    gsap.to(video,{ 
+        transform:"scaleX(0.7) scaleY(0)",
+        opacity:0,
+        borderRadius:"30px"
+    })
+    
+
+})
+
+}
+page3VideoAnimation()
